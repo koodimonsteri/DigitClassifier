@@ -56,6 +56,10 @@ class Grid:
         return self._grid[c_x][c_y]
 
 
+    def get_grid(self):
+        return self._grid
+
+
     def get_grid_np_array(self):
         arr = np.array(self._grid, dtype=np.uint8).transpose()
         return arr.reshape((1, IMG_SIZE))
@@ -96,20 +100,6 @@ class SimpleButton:
             pygame.event.post(event)
         else:
             logger.debug("On click event missing!")
-
-
-class ModelSelector:
-
-    def __init__(self):
-        pass
-
-
-    def draw(self):
-        pass
-
-    
-    def on_click(self):
-        pass
 
 
 class PredictionBox:
@@ -167,3 +157,4 @@ class SidePanel:
 
     def update(self):
         pass
+    

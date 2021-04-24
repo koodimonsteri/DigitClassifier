@@ -25,11 +25,17 @@ BLUE        = (  0,   0, 255)
 EVENT_UNDEFINED_ON_CLICK = 1
 EVENT_CLEAR_GRID = 2
 EVENT_LOAD_EXAMPLE = 3
+EVENT_SWITCH_MODE = 4
 
 
 # Cell types
 C_EMPTY = 0
 C_FULL = 1
+
+
+# NN Models
+MLP_MODEL = 1
+CNN_MODEL = 2
 
 
 # Paths
@@ -40,5 +46,5 @@ TEST_IMAGES = '''t10k-images-idx3-ubyte.gz'''
 TEST_LABELS = '''t10k-labels-idx1-ubyte.gz'''
 
 MODEL_DIR = "../models/"
-MLPMODEL = "MLPModel.pkl"
-
+MLP_MODEL_NAME = "MLPModel.pkl"
+CNN_MODEL_NAME = "CNNModel.pth"

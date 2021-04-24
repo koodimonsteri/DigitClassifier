@@ -2,3 +2,4 @@ sklearn==0.0
 torch==1.8.0+cu111
 numpy==1.15.0
 pygame==2.0.1
+requests==2.25.1

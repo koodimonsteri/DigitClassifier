@@ -65,7 +65,7 @@ class Net(nn.Module):
 
 
     def predict(self, img):
-        print(img)
+        #print(img)
         ft = m_transform(torch.FloatTensor(img).unsqueeze(0))
         ft = ft.unsqueeze(0)
         #print(ft)

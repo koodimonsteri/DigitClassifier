@@ -2,7 +2,7 @@ import pickle
 import random
 import logging
 logger = logging.getLogger(__name__)
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(level=logging.DEBUG)
 
 import pygame
 import numpy as np
@@ -123,3 +123,4 @@ class Game:
                 fps = 0
         
         pygame.quit()
+        
